@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+h1#time {
+  display: inline-block;
+  font-size: 36px;
+}
+
+h1 {
+  color: red!important;
+  font-size: 3rem!important;
+}
+
+small {
+  color: rgb(0, 255, 42);
+}
+p {
+  color: #fff;
+}
+
+.shadow {
+  text-align: center;
+  border: none;
+  padding: 30px;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -6px -6px 5px rgba(255, 255, 255, 0.9);
+  background: rgb(27, 25, 25);
+  outline: none;
+  margin: 1.5rem 0;
+}
+
+
+#main-header #header-div {
+  position: relative;
+  max-width: 40%;
+   margin: 2rem auto;
+}
+
+#main-header #header-div .title-div {
+  position: relative;
+  /* padding: 5rem; */
+   border-radius: 50px;
+  border: solid 8px transparent;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #222529;
+  
+}
+
+#main-header #header-div .gradient-animation {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fffa80, #e4205d, #4a3ece);
+  -webkit-animation: backgroundLinear 1s linear infinite;
+  animation: backgroundLinear 1s linear infinite;
+}
+
+@-webkit-keyframes backgroundLinear {
+  0% {
+    background: linear-gradient(135deg, #fffa80 0%, #e4205d 45%, #4a3ece 100%);
+    -webkit-filter: hue-rotate(0) blur(3px);
+    filter: hue-rotate(0) blur(10px);
+  }
+
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(3px);
+    filter: hue-rotate(360deg) blur(3px);
+  }
+}
+
+@keyframes backgroundLinear {
+  0% {
+    background: linear-gradient(135deg, #fffa80 0%, #e4205d 45%, #4a3ece 100%);
+    -webkit-filter: hue-rotate(0) blur(3px);
+    filter: hue-rotate(0) blur(3px);
+  }
+
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(3px);
+    filter: hue-rotate(360deg) blur(3px);
+  }
+}
+
+
+/* Responsive Degin */
+@media (max-width: 900px) {
+  #main-header #header-div{
+    max-width: 60%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #main-header #header-div{
+    max-width: 70%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-header #header-div{
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+  h1{
+    font-size: 1.7rem!important;
+  }
+}
